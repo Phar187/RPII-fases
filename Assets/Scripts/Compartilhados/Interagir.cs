@@ -60,7 +60,7 @@ public class Interagir : MonoBehaviour{
     }
 
     private void OnTriggerStay2D(Collider2D other){
-        if(other.gameObject.CompareTag("Jogo")){//serve para interagir com a máquina. Mudar essa função no futuro.
+        if(other.gameObject.CompareTag("Jogo1")){//serve para interagir com a máquina. Mudar essa função no futuro.
             if(Input.GetKey(KeyCode.Z)){//detecta o pressionamento da tecla 'Z'
                 Debug.Log("Iniciando " + other.gameObject.name + ".");
                 SceneManager.LoadSceneAsync("Jogo1");//carrega a scene do jogo 1 (pizzaria)

@@ -447,9 +447,10 @@ public class GameManagerQuimica : MonoBehaviour{
                 "Vitória!", 
                 "Você criou todos os compostos dentro do orçamento!", 
                 "Orçamento: " + orcamentoInicial.ToString("F2") + "\nOrçamento utilizado: " + orcamentoUtilizado.ToString("F2") + "\nPerformance: " + performance + "%", 
-                "Novo Recorde!",//alterar essa linha após implementar o sistema de save.
+                "",//alterar essa linha após implementar o sistema de save.
                 IDMedalha
             );
+            script.SalvarDados(performance, 2, IDMedalha, "Novo recorde!");
         }
         else{
             script.PopularCanvas(
